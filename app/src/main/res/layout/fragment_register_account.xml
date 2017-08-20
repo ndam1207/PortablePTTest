@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:hint="First Name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:hint="Last Name" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ll_name"
+        android:layout_marginTop="5dp"
+        android:hint="Email" />
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/et_user"
+        android:layout_below="@id/et_email"
+        android:hint="User Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/et_pass"
+        android:layout_below="@id/et_user"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/et_re_pass"
+        android:layout_below="@id/et_pass"
+        android:hint="Re Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/et_mobile"
+        android:layout_below="@id/et_re_pass"
+        android:hint="Mobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/et_mobile"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/bt_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:hint="Sign Up"
+            android:textSize="20dp" />
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/tv_dont"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/cardViewSignUp"
+        android:text="Don't have an account?"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

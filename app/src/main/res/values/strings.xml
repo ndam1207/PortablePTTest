@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PortablePT</string>
+    <string name="facebook_app_id">144792232775233</string>
+    <string name="fb_login_protocol_scheme">fb144792232775233</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

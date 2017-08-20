@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    android:orientation="vertical"
+    tools:context="com.example.hihihahahehe.portablept.fragments.CreatePackFragment">
+
+    <RelativeLayout
+        android:layout_marginBottom="30dp"
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Thêm gói tập"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name_pack_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên gói tập :"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_pack_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_des_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả :"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_pack_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian :" />
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/custom_imageview"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 tuần"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/custom_imageview"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 tuần"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/custom_imageview"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 tuần"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/custom_imageview"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 tuần"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_duration_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá tiền :"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_pack_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_address_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ :"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/bt_create"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/view"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tạo mới"
+            android:textAlignment="center"/>
+        <View
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/view"
+            android:layout_centerInParent="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/bt_cancel"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/view"
+            android:background="@color/week"
+            android:padding="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+</LinearLayout>
